@@ -78,6 +78,13 @@ main {
   color: var(--green);
   font-weight: 700;
   font-size: 1.1rem;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+  display: inline-block; 
+}
+
+.logo:hover {
+  transform: scale(1.08); /* Grossit légèrement le texte (8%) */
+  text-shadow: 0 4px 12px rgba(11, 66, 23, 0.2); /* Ajoute une petite ombre verte */
 }
 
 .nav-links {
@@ -90,11 +97,29 @@ main {
   text-decoration: none;
   color: var(--text);
   font-size: 0.95rem;
-  transition: 0.25s;
+  font-weight: 600; /* Rend le texte un tout petit peu plus épais pour faire pro */
+  transition: color 0.3s ease;
+  position: relative; /* Indispensable pour placer la petite barre en dessous */
 }
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0; 
+  height: 2px;
+  bottom: -4px; 
+  left: 0;
+  background-color: var(--green);
+  transition: width 0.3s ease; 
+}
+
 
 .nav-links a:hover {
   color: var(--green);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
 }
 
 .hero {
@@ -104,7 +129,7 @@ main {
 }
 
 .hero-content {
-  max-width: 760px;
+  max-width: 1000px; 
   padding: 80px 0;
 }
 
