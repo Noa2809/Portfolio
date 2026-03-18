@@ -366,6 +366,34 @@ main {
   flex-wrap: wrap;
 }
 
+.skills-grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px; 
+}
+
+.skill-box {
+  padding: 40px; 
+}
+
+.skill-box h3 {
+  font-size: 1.6rem;
+  border-bottom: 2px solid var(--border); 
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+}
+
+.skill-box .info-list li {
+  margin-bottom: 24px; 
+  font-size: 1rem;
+}
+
+.skill-box .info-list li strong {
+  display: block; 
+  color: var(--green);
+  font-size: 1.1rem;
+  margin-bottom: 6px; 
+}
+
 @media (max-width: 950px) {
   .about-grid,
   .cards-grid {
@@ -373,7 +401,7 @@ main {
   }
 
   .skills-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
 
   .timeline-item {
@@ -415,8 +443,8 @@ main {
   }
 
   .skills-grid {
-    grid-template-columns: 1fr;
-  }
+  grid-template-columns: repeat(2, 1fr);
+}
 
   .contact-actions {
     width: 100%;
