@@ -1,276 +1,195 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio - TRICERRI Noa</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Noa Tricerri</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="header">
-    <div class="container nav">
-      <a href="#" class="logo">TRICERRI Noa</a>
 
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#about">À propos</a></li>
-          <li><a href="#skills">Compétences</a></li>
-          <li><a href="#experience">Expériences</a></li>
-          <li><a href="#education">Formations</a></li>
-          <li><a href="#projects">Projets</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+    <div class="portfolio-container">
+        
+        <header class="navbar">
+            <div class="logo">NOA TRICERRI</div>
+            <nav class="nav-links">
+                <a href="#apropos">A propos</a>
+                <a href="#competences">Compétences</a>
+                <a href="#parcours">Parcours</a>
+                <a href="#projets">Projets</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div class="hero-bg" style="background-image: url('assets/image%20karate%20portfolio.jpg');"></div>
+            <div class="hero-content">
+                <h1>RIGUEUR<br><span class="text-green">EXPERTISE</span><br>PASSION</h1>
+            </div>
+        </section>
+
+        <section id="apropos" class="section-light">
+            <h2 class="title-left">A propos</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p style="color: var(--green-accent); font-weight: 700; margin-bottom: 10px;">Recherche un stage auprès d'un chef de projet (4 à 6 mois)</p>
+                    <p>Etudiant en 1ère année à <strong>Epitech Paris</strong>, passionné par l'informatique et les nouvelles technologies. Curieux, rigoureux et persévérant, je transpose la discipline du karaté de haut niveau dans le développement de solutions numériques innovantes.</p>
+                </div>
+                <div class="about-buttons">
+                    <a href="#contact" class="btn">Me contacter</a>
+                    <a href="CV noa Epitech (7).pdf" class="link-cv" target="_blank" download>Télécharger mon CV</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="competences" class="section-green">
+            <div class="green-bg-shape"></div>
+            <div class="content-wrapper">
+                <h2 class="title-right">Compétences</h2>
+                <div class="grid-2-cols">
+                    
+                    <div class="card">
+                        <h3>Hard Skills</h3>
+                        <p>Expertise Technique et outils maîtrisés.</p>
+                        <div class="tags">
+                            <span>JavaScript</span>
+                            <span>Python</span>
+                            <span>Node.js</span>
+                            <span>SQL</span>
+                            <span>Docker</span>
+                            <span>HTML/CSS</span>
+                            <span>Figma</span>
+                            <span>Git</span>
+                            <span>Pentesting (OWASP)</span>
+                            <span>Burp suite</span>
+                            <span>PHP</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>Soft Skills</h3>
+                        <p>Valeurs & Savoir-être développés par la discipline.</p>
+                        <div class="tags">
+                            <span>Discipline</span>
+                            <span>Persévérance</span>
+                            <span>Esprit d'équipe</span>
+                            <span>Pédagogie</span>
+                            <span>Autonomie</span>
+                            <span>Relationnel</span>
+                            <span>Polyvalent</span>
+                            <span>Organiser</span>
+                            <span>À l'écoute</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="parcours" class="section-light parcours-section">
+            <h2 class="title-left">PARCOURS & EXPERIENCES</h2>
+            <div class="timeline">
+                
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3>Assistant professeur de karaté (Bénévole)</h3>
+                        <span class="date">Depuis 2013</span>
+                    </div>
+                    <p class="subtitle">USCL Karaté</p>
+                    <p class="desc">Animation des séances d'entraînement, transmission des techniques, veille à la sécurité et éducation aux valeurs de respect et de discipline sportive.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3>Pratique du Karaté</h3>
+                        <span class="date">Depuis 2013</span>
+                    </div>
+                    <p class="subtitle">Fédération Française de Karaté (FFK)</p>
+                    <p class="desc">Compétiteur national et international. Triple vainqueur de la Coupe du Monde Kofukan en combat et double vainqueur en kata. Sextuple champion de France Shukokai. Développement de la rigueur, gestion du stress et performance.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3>Assistant pédagogique (Stage)</h3>
+                        <span class="date">2023</span>
+                    </div>
+                    <p class="subtitle">USCL Karaté</p>
+                    <p class="desc">Encadrement de jeunes pratiquants, participation à l'organisation de formations et aide à la préparation de compétitions locales.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="projets" class="section-green">
+            <div class="green-bg-shape"></div>
+            <div class="content-wrapper">
+                <h2 class="title-right">Mes projets</h2>
+                <div class="grid-2x3-cols">
+                    
+                    <a href="/portfolio/ALOT/alot.html" class="card project-link">
+                        <h3 style="color: var(--green-accent);">ALOT (Projet Phare)</h3>
+                        <p>Application sociale de recommandation de films et séries avec système de "match" entre utilisateurs.</p>
+                        <div class="tags">
+                            <span>Node.js</span><span>MySQL</span><span>Docker</span><span>HTML/CSS</span><span>Backend</span>
+                        </div>
+                    </a>
+
+                    <div class="card">
+                        <h3>Tardis (SNCF)</h3>
+                        <p>Analyse et prédiction des retards ferroviaires via Machine Learning.</p>
+                        <div class="tags">
+                            <span>Python</span><span>IA</span><span>Jupyter</span><span>Streamlit</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>Hack & Juice</h3>
+                        <p>Pentesting sur OWASP Juice Shop et documentation de vulnérabilités.</p>
+                        <div class="tags">
+                            <span>Sécurité</span><span>Pentest</span><span>Attaque</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>Job Aggregator</h3>
+                        <p>Plateforme d'agrégation d'offres d'emploi utilisant l'API WeLoveDevs.</p>
+                        <div class="tags">
+                            <span>API</span><span>JavaScript</span><span>Express</span><span>Node.js</span>
+                        </div>
+                    </div>
+
+                    <a href="/portfolio/Alice-Project/alice.html" class="card project-link">
+                        <h3>Alice's NLP Engine</h3>
+                            <p>Moteur d'analyse textuelle pour résumer des œuvres littéraires.</p>
+                        <div class="tags">
+                            <span>Python</span><span>NLP</span>
+                        </div>
+                    </a>
+
+                    <div class="card">
+                        <h3>NextBuy Analytics</h3>
+                        <p>Analyse exploratoire de données sur des millions de commandes.</p>
+                        <div class="tags">
+                            <span>Data Science</span><span>EDA</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <footer id="contact" class="footer">
+            <div class="contact-card">
+                <p class="contact-title">Prêt pour de nouveaux défis</p>
+                <p class="contact-loc">Basé à Marolles-en-Brie (94440), Disponible immédiatement.</p>
+                <a href="mailto:noa.tricerri@epitech.eu" class="contact-email">noa.tricerri@epitech.eu</a>
+            </div>
+        </footer>
+
     </div>
-  </header>
 
- <main>
-  <section class="hero">
-    <div class="container hero-content">
-      <p class="hero-tag">Actuellement en Bachelor à Epitech Paris</p>
-      
-      <h1>La rigueur du sport de haut niveau appliquée à l'informatique.</h1>
-      
-      <p class="hero-text">
-        Étudiant motivé et passionné, j'aborde chaque projet tech avec la même concentration et la même persévérance que sur les tatamis. Prêt à relever n'importe quel défi.
-      </p>
-
-      <div class="hero-actions">
-        <a href="#about" class="btn btn-primary">Découvrir mon profil</a>
-        <a href="cv/CV noa Epitech (6).pdf" target="_blank" class="btn btn-secondary">Télécharger mon CV</a>
-      </div>
-    </div>
-  </section>
-
-    <section id="about" class="section">
-      <div class="container">
-        <div class="section-title">
-          <h2>À propos</h2>
-        </div>
-
-        <div class="about-grid">
-          <div class="about-card">
-            <h3>Profil</h3>
-            <p>
-             Étudiant en première année à Epitech, passionné par l’informatique et les nouvelles technologies. Curieux, rigoureux et persévérant, je développe mes compétences en programmation et en travail par projet à travers des expériences concrètes
-            </p>
-            <p>
-              <p>
-                Mon objectif actuel est de perfectionner mes compétences techniques à travers des projets concrets et de relever sans cesse de nouveaux défis.
-              </p>
-            </p>
-          </div>
-
-          <div class="about-card">
-            <h3>Infos</h3>
-            <ul class="info-list">
-              <li><strong>Nom :</strong> TRICERRI Noa</li>
-              <li><strong>Profil :</strong> Étudiant 1er année</li>
-              <li><strong>Ville :</strong> Marolles-en-Brie 94440</li>
-              <li><strong>Email :</strong> noa.tricerri@epitech.eu</li>
-              <li><strong>Objectif :</strong> Alternance</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-   <section id="skills" class="section">
-      <div class="container">
-        <div class="section-title">
-          <h2>Compétences</h2>
-        </div>
-
-        <div class="skills-grid">
-          <div class="skill-box">
-            <h3> Hard Skills </h3>
-            <ul class="info-list">
-              <li><strong>Front-end :</strong> HTML, CSS (Bases solides) & JavaScript</li>
-              <li><strong>Back-end & Data :</strong> SQL & PHP (Notions)</li>
-              <li><strong>Design & Outils :</strong> Figma & GitHub (Bases solides)</li>
-              <li><strong>Système :</strong> Cybersécurité (Bases)</li>
-              <li><strong>Langue :</strong> Anglais (Intermédiaire - B1)</li>
-            </ul>
-          </div>
-
-          <div class="skill-box">
-            <h3>Soft Skills</h3>
-            <ul class="info-list">
-              <li><strong>Rigueur & Concentration :</strong> Développées par la pratique du sport de haut niveau.</li>
-              <li><strong>Persévérance :</strong> Capacité à rester focus sur mes objectifs.</li>
-              <li><strong>Travail d'équipe :</strong> Habitué à la méthode par projet d'Epitech.</li>
-              <li><strong>Pédagogie :</strong> Sens des responsabilités acquis en encadrant des élèves au karaté.</li>
-              <li><strong>Autonomie :</strong> Curiosité naturelle pour les nouvelles technologies.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-      
-
-    <section id="experience" class="section">
-      <div class="container">
-        <div class="section-title">
-          <h2>Expériences</h2>
-        </div>
-
-        <div class="timeline">
-          <article class="timeline-item">
-            <div class="timeline-date">Depuis 2013</div>
-            <div class="timeline-content">
-              <h3>Projet personnel</h3>
-              <p class="timeline-role">Assistant professeur de karaté (bénévole)</p>
-              <p>
-               Lors de mon expérience, j’ai encadré des élèves en assurant l’animation de séances d’entraînement structurées et adaptées à leur niveau. 
-               J’ai transmis les techniques fondamentales du karaté tout en veillant à la sécurité de chacun durant les cours. 
-               Cette mission m’a également permis de développer chez les élèves des valeurs essentielles telles que la discipline, le respect et l’esprit sportif.
-              </p>
-            </div>
-          </article>
-
-          <article class="timeline-item">
-            <div class="timeline-date">2023</div>
-            <div class="timeline-content">
-              <h3>Projet scolaire</h3>
-              <p class="timeline-role">Assistant pédagogique (stage)</p>
-              <p>
-                J’ai encadré de jeunes pratiquants en les accompagnant dans leur progression et en contribuant à créer un environnement d’apprentissage positif. 
-                J’ai également participé à l’organisation de formations, ce qui m’a permis de développer mon sens des responsabilités et mon autonomie. 
-                Enfin, j’ai apporté mon aide à la préparation de compétitions locales, renforçant ainsi mes compétences en organisation et en travail d’équipe.
-              </p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="education" class="section"></section>
-      <div class="container">
-        <div class="section-title">
-          <h2>Formations</h2>
-        </div>
-
-        <div class="cards-grid">
-          <div class="card">
-            <h3>Epitech</h3>
-            <p>Programme Bachelor – Expertise en informatique</p><br><p>Participation à des projets informatiques avec initiation à la programmation et au travail en mode projet. Cette expérience m’a permis de développer autonomie, curiosité et persévérance, tout en renforçant mes compétences en collaboration.</p>
-            <span>Depuis 2025</span>
-          </div>
-
-          <div class="card">
-            <h3>Diplôme d’Instructeur Fédéral</h3>
-            <p>Fédération Française de Karaté</p><br><p>Formation au Diplôme d’Instructeur Fédéral (DIF) permettant d’acquérir les bases de l’encadrement en karaté. Cette expérience m’a permis de développer des compétences pédagogiques, le sens des responsabilités et la capacité à encadrer des pratiquants en toute sécurité.</p>
-            <span>Février 2026</span>
-          </div>
-
-          <div class="card">
-            <h3>Baccalauréat général – Spécialités Physique-Chimie et Mathématiques</h3>
-            <p>Lycée Guillaume Budé, Limeil-Brévannes</p><br><p>Obtention du baccalauréat avec mention assez bien, reflétant mon sérieux et mon engagement tout au long de ma scolarité. Cette réussite témoigne de ma capacité à travailler de manière régulière, à m’organiser efficacement et à atteindre les objectifs fixés.</p>
-            <span>Février 2026</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="section">
-      <div class="container">
-        <div class="section-title">
-          <h2>Projets</h2>
-        </div>
-
-        <div class="cards-grid">
-          <article class="card project-card">
-            <h3>Portfolio personnel</h3>
-            <p>
-              Création d’un site vitrine moderne destiné à présenter mon profil, mes compétences et mes projets, 
-              avec une attention particulière portée à la clarté, au design et à l’expérience utilisateur.
-            </p>
-            <div class="tags">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>Responsive</span>
-            </div>
-          </article>
-
-          <article class="card project-card">
-            <h3>E-todo réseau sociaux</h3>
-            <p>
-              Réalisation d’un site web en 3 semaines dans le cadre d’un projet scolaire, en utilisant HTML, CSS et JavaScript pour le frontend. 
-              Mise en place d’un backend avec Express.js et développement d’une API REST (CRUD) permettant la gestion des données.
-            </p>
-            <div class="tags">
-              <span>JavaScript</span>
-              <span>UI</span>
-              <span>Web</span>
-            </div>
-          </article>
-
-          <article class="card project-card">
-            <h3>Tardis - Visualisation des retards prévus pour les trains SNCF</h3>
-            <p>
-              Réalisation d’un projet de data analyse visant à visualiser et prédire les retards de trains SNCF. 
-              Exploitation de données pour mettre en évidence des tendances et schémas de retard, 
-              avec utilisation de méthodes d’analyse exploratoire et de modélisation prédictive.
-            </p>
-            <div class="tags">
-              <span>Data/IA</span>
-              <span>Python</span>
-              <span>Machine Learning</span>
-            </div>
-          </article>
-
-          <article class="card project-card">
-            <h3>Yowl project</h3>
-            <p>
-             Développement de Yowl, une application web dédiée aux films et séries, permettant de noter des contenus, échanger avec ses amis, créer une watchlist et savoir sur quelles plateformes regarder un film. 
-             Projet conçu avec HTML, CSS, JavaScript, Node.js, Express et MySQL, puis déployé sur une machine virtuelle Azure avec Docker. 
-             Cette expérience m’a permis de travailler sur un projet complet, de la conception à la mise en ligne.
-            </p>
-            <div class="tags">
-              <span>JavaScript</span>
-              <span>UI / UX</span>
-              <span>Web</span>
-              <span>Figma</span>
-              <span>Node.js</span>
-              <span>Docker</span>
-              <span>MySQL</span>
-            </div>
-          </article>
-
-          <article class="card project-card">
-            <h3>Comparateur d'actions environnementales pour les municipalités</h3>
-            <p>
-             Projet réalisé lors du hackathon Data & Climate (Epitech × The Shifters) en amont des élections municipales 2026.
-             Objectif : analyser, visualiser et comparer les actions environnementales des communes françaises (mobilité, énergie, biodiversité, déchets…) à partir de données publiques, 
-             afin de les rendre compréhensibles via une interface claire et accessible.
-            </p>
-            <div class="tags">
-              <span>JavaScript</span>
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>API</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact-section">
-      <div class="container contact-box">
-        <div>
-          <p class="contact-label">Contact</p>
-          <h2>On peut travailler ensemble.</h2>
-          <p>
-            Tu peux me contacter par mail ou télécharger mon CV.
-          </p>
-        </div>
-
-        <div class="contact-actions">
-          <a class="btn btn-primary" href="mailto:tonmail@gmail.com">noa.tricerri@epitech.eu</a>
-           <a href="cv/CV noa Epitech (6).pdf" target="_blank" class="btn btn-secondary">Télécharger mon CV</a>
-        </div>
-      </div>
-    </section>
-  </main>
 </body>
 </html>

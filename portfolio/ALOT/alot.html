@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALOT — App Web · Power Rangers</title>
+<link rel="stylesheet" href="alot.css">
+</head>
+<body>
+ 
+<!-- SIDEBAR ACCENT (right magenta bar like in the PDF) -->
+<div class="sidebar-accent"></div>
+ 
+<!-- TOPBAR -->
+<header class="topbar">
+  <div class="topbar-logo">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <span class="topbar-name">Power Rangers</span>
+</header>
+ 
+<!-- ═══════════ HERO ═══════════ -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <p class="hero-team">
+        <strong>Power Rangers</strong>
+        Azad MANOUKIAN · Elian KOLNIK · Nathan LESCAUT · Noa TRICERRI
+      </p>
+      <h1 class="hero-title">ALOT</h1>
+      <p class="hero-subtitle">App Web</p>
+      <p class="hero-desc">
+        Une application web sociale dédiée au cinéma : trouvez des films, enregistrez vos avis, découvrez des titres aléatoirement à la manière de Tinder, et discutez avec d'autres utilisateurs.
+      </p>
+      <div class="hero-tags">
+        <span class="hero-tag">Node.js</span>
+        <span class="hero-tag">HTML/CSS/JS</span>
+        <span class="hero-tag">Docker</span>
+        <span class="hero-tag">Figma</span>
+        <span class="hero-tag">UX Design</span>
+        <span class="hero-tag">Epitech 2025</span>
+      </div>
+      <a href="http://20.199.16.33:8080" class="hero-cta" target="_blank">
+        Voir le MVP → 20.199.16.33:8080
+      </a>
+    </div>
+    <div class="hero-right">
+      <div class="hero-members">
+        Azad<br>Elian<br>Nathan<br>Noa
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ═══════════ PROBLEME ═══════════ -->
+<section class="section problem-section">
+  <div class="section-inner reveal">
+    <p class="section-label">Problématique</p>
+    <div class="problem-question">
+      Comment faire en sorte que l'utilisateur puisse
+      <span class="hl">trouver</span>,
+      <span class="hl">regarder</span> et
+      <span class="hl">parler</span>
+      des films avec d'autres utilisateurs ?
+    </div>
+    <div class="problem-divider"></div>
+    <p style="text-align:center; color:var(--white-40); font-size:0.9rem; font-weight:600;">
+      Cible : amateurs de films, familles, groupes d'amis, cinéphiles connectés
+    </p>
+  </div>
+</section>
+ 
+<!-- ═══════════ CONCEPT ═══════════ -->
+<section class="section concept-section">
+  <div class="section-inner reveal">
+    <p class="section-label">Fonctionnalités</p>
+    <h2 class="section-title">Concept</h2>
+    <div class="section-underline"></div>
+    <div class="concept-grid">
+      <div class="concept-card">
+        <div class="concept-num">01</div>
+        <div class="concept-text">Possibilité de créer un compte utilisateur</div>
+      </div>
+      <div class="concept-card">
+        <div class="concept-num">02</div>
+        <div class="concept-text">Propose des films par catégories et séries</div>
+      </div>
+      <div class="concept-card">
+        <div class="concept-num">03</div>
+        <div class="concept-text">Enregistre les avis et les films regardés</div>
+      </div>
+      <div class="concept-card">
+        <div class="concept-num">04</div>
+        <div class="concept-text">Proposer des films aléatoirement (style Tinder)</div>
+      </div>
+      <div class="concept-card">
+        <div class="concept-num">05</div>
+        <div class="concept-text">Parler avec d'autres utilisateurs</div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ═══════════ CHOIX DESIGN ═══════════ -->
+<section class="section design-section">
+  <div class="section-inner reveal">
+    <p class="section-label">Direction Artistique</p>
+    <h2 class="section-title">Choix design</h2>
+    <div class="section-underline"></div>
+    <div class="design-grid">
+      <div class="design-card">
+        <div class="design-num">01</div>
+        <div class="design-text">Le visuel est inspiré des sites de streaming variés (Netflix, Prime, etc.)</div>
+      </div>
+      <div class="design-card">
+        <div class="design-num">02</div>
+        <div class="design-text">La barre de navigation est inspirée d'Instagram</div>
+      </div>
+      <div class="design-card">
+        <div class="design-num">03</div>
+        <div class="design-text">Système de découverte inspiré de Tinder (swipe de films)</div>
+      </div>
+      <div class="design-card">
+        <div class="design-num">04</div>
+        <div class="design-text">La description mélange les codes de Letterboxd et TMDB</div>
+      </div>
+      <div class="design-card">
+        <div class="design-num">05</div>
+        <div class="design-text">Les avis mélangent Letterboxd et TMDB</div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ═══════════ TEAM ═══════════ -->
+<section class="section team-section">
+  <div class="section-inner reveal">
+    <p class="section-label">Équipe</p>
+    <h2 class="section-title">Power Rangers</h2>
+    <div class="section-underline"></div>
+    <div class="team-grid">
+ 
+      <!-- NOA -->
+      <div class="member-card">
+        <div class="member-header">
+          <span class="member-name">Noa TRICERRI</span>
+          <span class="member-role-badge">UX/UI · Backend</span>
+        </div>
+        <div class="member-body">
+          <p class="member-section-title">Mon rôle</p>
+          <ul class="role-list">
+            <li>Figma — mockups & prototype</li>
+            <li>Démarche d'amélioration continue</li>
+            <li>Personas & analyse utilisateur</li>
+            <li>Méthode SWOT</li>
+            <li>Aide au backend</li>
+          </ul>
+          <p class="member-section-title">Mes méthodes</p>
+          <ul class="role-list">
+            <li>Norme de commit Git</li>
+            <li>Réunion d'équipe chaque semaine</li>
+            <li>Communication via Discord & Teams</li>
+            <li>Avis de personnes extérieures</li>
+          </ul>
+          <p class="member-section-title">Ressenti</p>
+          <div class="ressenti-grid">
+            <div class="ressenti-item"><span class="ressenti-num">01</span><span class="ressenti-text">Amélioration sur l'organisation</span></div>
+            <div class="ressenti-item"><span class="ressenti-num">02</span><span class="ressenti-text">Feedback pas assez précis</span></div>
+            <div class="ressenti-item"><span class="ressenti-num">03</span><span class="ressenti-text">Choix du groupe très bon</span></div>
+            <div class="ressenti-item"><span class="ressenti-num">04</span><span class="ressenti-text">Contente du résultat</span></div>
+          </div>
+          <div class="bilan-grid">
+            <div class="bilan-col">
+              <div class="bilan-col-title">Force</div>
+              <p>J'ai adoré ce projet, il m'a donné plein d'idées pour d'autres.</p>
+            </div>
+            <div class="bilan-col">
+              <div class="bilan-col-title">Amélioration</div>
+              <ul>
+                <li>Se documenter davantage niveau backend</li>
+                <li>Prendre les avis UX pertinents</li>
+              </ul>
+            </div>
+            <div class="bilan-col">
+              <div class="bilan-col-title">Plan</div>
+              <p>Développer l'app web pour regarder les films directement dessus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- ELIAN -->
+      <div class="member-card">
+        <div class="member-header">
+          <span class="member-name">Elian KOLNIK</span>
+          <span class="member-role-badge">Research · Backend</span>
+        </div>
+        <div class="member-body">
+          <p class="member-section-title">Mon rôle</p>
+          <ul class="role-list">
+            <li>Research utilisateur (39 réponses Google Forms)</li>
+            <li>Personas & cartographie utilisateur</li>
+            <li>Prioritization RICE</li>
+            <li>Backend (Node.js, routes, auth)</li>
+          </ul>
+          <p class="member-section-title">Mes méthodes</p>
+          <ul class="role-list">
+            <li>Communication constante avec l'équipe</li>
+            <li>Réunions d'équipe régulières</li>
+            <li>Affichage collectif des idées</li>
+          </ul>
+          <p class="member-section-title">Ressenti</p>
+          <div class="ressenti-grid">
+            <div class="ressenti-item"><span class="ressenti-num">01</span><span class="ressenti-text">Frustration technique et créative</span></div>
+            <div class="ressenti-item"><span class="ressenti-num">02</span><span class="ressenti-text">Désalignement avec mes préférences</span></div>
+            <div class="ressenti-item"><span class="ressenti-num">03</span><span class="ressenti-text">Bon groupe de travail</span></div>
+            <div class="ressenti-item"><span class="ressenti-num">04</span><span class="ressenti-text">Résultat très satisfaisant</span></div>
+          </div>
+          <div class="bilan-grid">
+            <div class="bilan-col">
+              <div class="bilan-col-title">Force</div>
+              <p>Objectif final réussi, heureux du résultat obtenu.</p>
+            </div>
+            <div class="bilan-col">
+              <div class="bilan-col-title">Amélioration</div>
+              <p>Améliorer mon niveau UI/UX design.</p>
+            </div>
+            <div class="bilan-col">
+              <div class="bilan-col-title">Plan</div>
+              <p>Développer un site interactif entre les utilisateurs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- NATHAN -->
+      <div class="member-card">
+        <div class="member-header">
+          <span class="member-name">Nathan LESCAUT</span>
+          <span class="member-role-badge">Wireframes · Mockups</span>
+        </div>
+        <div class="member-body">
+          <p class="member-section-title">Mon rôle</p>
+          <ul class="role-list">
+            <li>Research utilisateur</li>
+            <li>Wireframes (premiers jets sur papier)</li>
+            <li>Mockups Figma</li>
+            <li>Feedback & itérations</li>
+          </ul>
+          <p class="member-section-title">Mes méthodes</p>
+          <ul class="role-list">
+            <li>Norme de commit Git</li>
+            <li>Réunion chaque semaine</li>
+            <li>Communication avant/après chaque livrable</li>
+            <li>Premier jet d'idées, modifier selon les retours</li>
+          </ul>
+          <p class="member-section-title">Ressenti</p>
+          <div class="ressenti-grid">
+            <div class="ressenti-item"><span class="ressenti-num">01</span><span class="ressenti-text">Meilleure organisation de groupe</span></div>
+            <div class="ressenti-item"><span class="ressenti-num">02</span><span class="ressenti-text">Bonne communication d'équipe</span></div>
+            <div class="ressenti-item"><span class="ressenti-num">03</span><span class="ressenti-text">Choix du groupe très bon</span></div>
+            <div class="ressenti-item"><span class="ressenti-num">04</span><span class="ressenti-text">Appréciation globale du projet</span></div>
+          </div>
+          <div class="bilan-grid">
+            <div class="bilan-col">
+              <div class="bilan-col-title">Force</div>
+              <p>Grosse appréciation du projet et découverte d'un univers qui m'attire pour plus tard.</p>
+            </div>
+            <div class="bilan-col">
+              <div class="bilan-col-title">Amélioration</div>
+              <ul>
+                <li>Documentation sur les styles design</li>
+                <li>Plus de doc UI/UX</li>
+                <li>Identité visuelle plus forte</li>
+              </ul>
+            </div>
+            <div class="bilan-col">
+              <div class="bilan-col-title">Plan</div>
+              <p>Me renseigner sur le domaine avec des vidéos et de la documentation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- AZAD -->
+      <div class="member-card">
+        <div class="member-header">
+          <span class="member-name">Azad MANOUKIAN</span>
+          <span class="member-role-badge">MVP · Backend</span>
+        </div>
+        <div class="member-body">
+          <p class="member-section-title">Mon rôle</p>
+          <ul class="role-list">
+            <li>MVP — développement frontend (HTML/CSS/JS)</li>
+            <li>Backend (routes auth, middleware, Docker)</li>
+            <li>Personas & Benchmark</li>
+            <li>Avis sur le Figma</li>
+          </ul>
+          <p class="member-section-title">Mes méthodes</p>
+          <ul class="role-list">
+            <li>Norme de commit Git</li>
+            <li>Rendre le code le plus propre possible</li>
+            <li>Communication entre chaque livrable</li>
+            <li>Premier jet d'idées, modifier selon les retours</li>
+          </ul>
+          <p class="member-section-title">Ressenti</p>
+          <div class="ressenti-grid">
+            <div class="ressenti-item"><span class="ressenti-num">01</span><span class="ressenti-text">Meilleure organisation de groupe</span></div>
+            <div class="ressenti-item"><span class="ressenti-num">02</span><span class="ressenti-text">Bonne communication d'équipe</span></div>
+            <div class="ressenti-item"><span class="ressenti-num">03</span><span class="ressenti-text">Choix du groupe très bon</span></div>
+            <div class="ressenti-item"><span class="ressenti-num">04</span><span class="ressenti-text">Appréciation globale du projet</span></div>
+          </div>
+          <div class="bilan-grid">
+            <div class="bilan-col">
+              <div class="bilan-col-title">Force</div>
+              <p>La mise en place de Figma était obligatoire vu l'ampleur du projet.</p>
+            </div>
+            <div class="bilan-col">
+              <div class="bilan-col-title">Amélioration</div>
+              <ul>
+                <li>Organisation globale très bonne</li>
+                <li>Rendre le code plus lisible pour l'équipe</li>
+              </ul>
+            </div>
+            <div class="bilan-col">
+              <div class="bilan-col-title">Plan</div>
+              <p>Développer un MVP le plus fidèle possible à l'idée initiale de l'équipe.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+    </div>
+  </div>
+</section>
+ 
+<!-- FOOTER -->
+<footer>
+  <p class="footer-title">ALOT</p>
+  <p class="footer-sub">Power Rangers · Epitech 2025 · 20.199.16.33:8080</p>
+</footer>
+ 
+<script>
+  const els = document.querySelectorAll('.reveal');
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('vis'); });
+  }, { threshold: 0.08 });
+  els.forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
