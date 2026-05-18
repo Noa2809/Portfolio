@@ -28,9 +28,7 @@ body {
   overflow-x: hidden;
 }
  
-/* ══════════════════════════════
-   SCANLINE overlay
-══════════════════════════════ */
+/* lignes sur l ecran */
 body::before {
   content: '';
   position: fixed; inset: 0;
@@ -44,9 +42,7 @@ body::before {
   pointer-events: none; z-index: 1000;
 }
  
-/* ══════════════════════════════
-   TOPBAR
-══════════════════════════════ */
+/* barre du haut */
 .topbar {
   position: fixed; top: 0; left: 0; right: 0; height: 50px;
   background: rgba(8,12,8,0.95);
@@ -87,9 +83,7 @@ body::before {
   letter-spacing: 0.1em;
 }
  
-/* ══════════════════════════════
-   HERO
-══════════════════════════════ */
+/* page principale */
 .hero {
   position: relative;
   min-height: 100vh;
@@ -101,7 +95,7 @@ body::before {
     radial-gradient(ellipse 60% 50% at 50% 60%, rgba(0,255,65,0.06) 0%, transparent 65%),
     var(--bg);
 }
-/* grid background */
+/* grille en fond */
 .hero::after {
   content: '';
   position: absolute; inset: 0;
@@ -191,9 +185,7 @@ body::before {
   text-transform: uppercase;
 }
  
-/* ══════════════════════════════
-   SECTIONS
-══════════════════════════════ */
+/* sections */
 .section {
   position: relative; z-index: 1;
   padding: 5.5rem 2rem; overflow: hidden;
@@ -216,7 +208,7 @@ body::before {
   letter-spacing: 0.02em;
 }
  
-/* terminal window chrome */
+/* style terminal */
 .term-window {
   background: #0a0f0a;
   border: 1px solid var(--border);
@@ -251,9 +243,7 @@ body::before {
 .term-body .warn { color: var(--amber); }
 .term-body .comment { color: rgba(0,255,65,0.35); font-style: italic; }
  
-/* ══════════════════════════════
-   STRUCTURE section
-══════════════════════════════ */
+/* partie structure */
 .structure-section { background: var(--bg-mid); }
 .struct-grid {
   display: grid; grid-template-columns: 1fr 1fr; gap: 1.4rem;
@@ -282,9 +272,7 @@ body::before {
   font-size: 0.88rem; font-weight: 500; color: var(--white-70); line-height: 1.65;
 }
  
-/* ══════════════════════════════
-   SCOREBOARD
-══════════════════════════════ */
+/* statistiques */
 .score-section { background: var(--bg); }
 .score-big {
   display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 2.5rem;
@@ -341,9 +329,7 @@ body::before {
   line-height: 1.4;
 }
  
-/* ══════════════════════════════
-   DEPOT / MARKDOWN
-══════════════════════════════ */
+/* depot github */
 .depot-section { background: var(--bg-mid); }
 .md-structure {
   display: grid;
@@ -369,9 +355,7 @@ body::before {
   font-size: 0.85rem; font-weight: 500; color: var(--white-70); line-height: 1.6;
 }
  
-/* ══════════════════════════════
-   COMPETENCES
-══════════════════════════════ */
+/* competences */
 .skills-section { background: var(--bg); }
 .skills-grid {
   display: grid;
@@ -402,9 +386,7 @@ body::before {
 }
 .skill-list li::before { content: '>'; color: var(--green); flex-shrink: 0; font-family: 'Share Tech Mono', monospace; }
  
-/* ══════════════════════════════
-   FOOTER
-══════════════════════════════ */
+/* bas de page */
 footer {
   background: var(--bg);
   border-top: 1px solid var(--border);
@@ -434,21 +416,25 @@ footer::before {
   position: relative;
 }
  
-/* ══════════════════════════════
-   ANIMATIONS
-══════════════════════════════ */
+/* Animations */
+
+/* fait clignoter le curseur */
+
 @keyframes blink {
   0%, 100% { opacity: 1; }
   50%       { opacity: 0; }
 }
+/* fait briller le point vert */
 @keyframes pulse-dot {
   0%, 100% { box-shadow: 0 0 6px var(--green); }
   50%       { box-shadow: 0 0 12px var(--green), 0 0 20px var(--green); }
 }
+/* fait apparaitre les elements vers le haut */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(20px); }
   to   { opacity: 1; transform: none; }
 }
+/* animation quand on scroll */
 .reveal {
   opacity: 0; transform: translateY(24px);
   transition: opacity 0.6s ease, transform 0.6s ease;
