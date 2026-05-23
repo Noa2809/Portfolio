@@ -476,3 +476,46 @@ h2 {
     cursor: pointer;
     align-self: flex-start;
 }
+
+/* Boutons à l'intérieur des cartes */
+.card-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.btn-card {
+    flex: 1; 
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Bouton principal (Voir le projet) */
+.btn-card {
+    background-color: var(--green-dark);
+    color: var(--text-light);
+    border: 2px solid var(--green-dark);
+}
+
+.btn-card:hover {
+    background-color: var(--green-accent);
+    border-color: var(--green-accent);
+    transform: translateY(-2px);
+}
+
+/* Bouton secondaire (GitHub) */
+.btn-github {
+    background-color: transparent;
+    color: var(--green-dark);
+    border: 2px solid var(--green-dark);
+}
+
+.btn-github:hover {
+    background-color: var(--green-dark);
+    color: var(--text-light);
+}
