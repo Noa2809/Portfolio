@@ -1,13 +1,11 @@
-/* =========================================
-   VARIABLES ET RESET
-========================================= */
+/*VARIABLES ET RESET*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Le fameux Smooth Scroll */
+/*Smooth Scroll */
 html {
     scroll-behavior: smooth;
 }
@@ -33,9 +31,7 @@ body {
     padding: 0; 
 }
 
-/* =========================================
-   CONTENEUR PRINCIPAL
-========================================= */
+/*CONTENEUR PRINCIPAL*/
 .portfolio-container {
     max-width: 1200px; 
     margin: 0 auto;    
@@ -45,9 +41,7 @@ body {
     box-shadow: none; 
 }
 
-/* =========================================
-   HEADER & NAVIGATION
-========================================= */
+/* HEADER & NAVIGATION*/
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -83,9 +77,7 @@ body {
     transform: translateY(-2px);
 }
 
-/* =========================================
-   HERO SECTION
-========================================= */
+/* HERO SECTION*/
 .hero {
     position: relative;
     height: 480px;
@@ -126,9 +118,7 @@ body {
     color: var(--green-accent);
 }
 
-/* =========================================
-   TITRES DE SECTIONS
-========================================= */
+/* TITRES DE SECTIONS*/
 h2 {
     font-family: var(--font-title);
     font-size: 1.6rem;
@@ -160,9 +150,7 @@ h2 {
     margin-right: 20px;
 }
 
-/* =========================================
-   SECTIONS CLAIRES
-========================================= */
+/*SECTIONS CLAIRES*/
 .section-light {
     padding: 60px 50px;
     background-color: var(--bg-site);
@@ -219,9 +207,7 @@ h2 {
     color: var(--green-dark);
 }
 
-/* =========================================
-   SECTIONS VERTES INCLINEES
-========================================= */
+/* SECTIONS VERTES INCLINEES*/
 .section-green {
     position: relative;
     padding: 80px 50px;
@@ -241,9 +227,7 @@ h2 {
     z-index: 2;
 }
 
-/* =========================================
-   CARTES (Compétences & Projets)
-========================================= */
+/* CARTES (Compétences & Projets)*/
 .grid-2-cols {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -260,12 +244,10 @@ h2 {
 .card {
     background-color: var(--card-color);
     width: 100%;
-    /* Remplacement de aspect-ratio par padding pour accueillir le texte */
     padding: 30px; 
     border-radius: 8px; 
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
     cursor: pointer;
-    /* Flexbox pour aligner le contenu à l'intérieur */
     display: flex;
     flex-direction: column;
 }
@@ -276,7 +258,6 @@ h2 {
     background-color: #d8e5df; 
 }
 
-/* NOUVEAU : Styles pour le texte à l'intérieur des cartes */
 .card h3 {
     font-family: var(--font-title);
     color: var(--green-dark);
@@ -289,7 +270,7 @@ h2 {
     font-size: 0.9rem;
     color: var(--text-main);
     margin-bottom: 20px;
-    flex-grow: 1; /* Pousse les tags vers le bas si la carte est plus grande */
+    flex-grow: 1; 
 }
 
 .tags {
@@ -307,9 +288,7 @@ h2 {
     border-radius: 20px;
 }
 
-/* =========================================
-   PARCOURS & EXPERIENCES
-========================================= */
+/* PARCOURS & EXPERIENCES*/
 .parcours-section {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -383,9 +362,7 @@ h2 {
     color: #444;
 }
 
-/* =========================================
-   FOOTER
-========================================= */
+/*FOOTER*/
 .footer {
     background-color: var(--bg-site);
     padding: 60px 20px;
@@ -443,4 +420,59 @@ h2 {
 
 .project-link:hover {
     transform: translateY(-8px);
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    max-width: 900px;
+}
+
+.contact-card {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #c7d4cc; 
+    border-radius: 8px;
+    font-family: var(--font-text);
+    font-size: 0.95rem;
+    background-color: var(--bg-site);
+    color: var(--text-main);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-input:focus, .form-textarea:focus {
+    outline: none;
+    border-color: var(--green-accent);
+    box-shadow: 0 0 8px rgba(33, 184, 122, 0.2);
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-form .btn {
+    border: none;
+    cursor: pointer;
+    align-self: flex-start;
 }

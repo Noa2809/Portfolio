@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Noa Tricerri</title>
+    <meta name="description" content="Portfolio de Noa Tricerri, étudiant à Epitech Paris. Découvrez mes projets web, mes compétences et mon parcours.">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -182,13 +183,23 @@
         </section>
 
         <footer id="contact" class="footer">
-            <div class="contact-card">
-                <p class="contact-title">Prêt pour de nouveaux défis</p>
-                <p class="contact-loc">Basé à Marolles-en-Brie (94440), Disponible immédiatement.</p>
-                <a href="mailto:noa.tricerri@epitech.eu" class="contact-email">noa.tricerri@epitech.eu</a>
+            <div class="contact-container">
+                <!-- Ta carte de contact actuelle -->
+                <div class="contact-card">
+                    <p class="contact-title">Prêt pour de nouveaux défis</p>
+                    <p class="contact-loc">Basé à Marolles-en-Brie (94440), Disponible immédiatement.</p>
+                    <a href="mailto:noa.tricerri@epitech.eu" class="contact-email">noa.tricerri@epitech.eu</a>
+                </div>
+                
+                <form action="https://formspree.io/f/mdajdaqn" method="POST" class="contact-form">
+                    <input type="text" name="name" placeholder="Ton nom" required class="form-input">
+                    <input type="email" name="email" placeholder="Ton adresse email" required class="form-input">
+                    <textarea name="message" placeholder="Ton message..." required class="form-textarea"></textarea>
+                    
+                    <button type="submit" class="btn">Envoyer le message</button>
+                </form>
             </div>
         </footer>
-
     </div>
 
 </body>

@@ -26,9 +26,7 @@ body {
   overflow-x: hidden;
 }
  
-/* ══════════════════════════════
-   TOPBAR — "Les trois mousquetaires"
-══════════════════════════════ */
+/*TOPBAR — "Les trois mousquetaires"*/
 .topbar {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -56,7 +54,7 @@ body {
   color: var(--white);
   letter-spacing: 0.01em;
 }
-/* The blue-grey rectangle top-right (signature of the PDF) */
+
 .topbar-rect {
   width: 56px; height: 28px;
   background: var(--slate);
@@ -64,9 +62,7 @@ body {
   opacity: 0.85;
 }
  
-/* ══════════════════════════════
-   BLUE GLOW CORNERS (signature of the PDF)
-══════════════════════════════ */
+/*BLUE GLOW CORNERS */
 .glow-tl {
   position: fixed;
   top: -60px; left: -60px;
@@ -92,9 +88,7 @@ body {
   border-radius: 50%;
 }
  
-/* ══════════════════════════════
-   HERO
-══════════════════════════════ */
+/* HERO*/
 .hero {
   position: relative;
   min-height: 100vh;
@@ -103,7 +97,7 @@ body {
   padding: 7rem 2rem 4rem;
   overflow: hidden;
 }
-/* thin horizontal lines like the PDF */
+
 .hero-line-top {
   position: absolute;
   top: 28%; left: 0; width: 30%;
@@ -150,9 +144,7 @@ body {
   letter-spacing: 0.04em;
 }
  
-/* ══════════════════════════════
-   SECTIONS
-══════════════════════════════ */
+/* SECTIONS*/
 .section {
   position: relative; z-index: 1;
   padding: 5.5rem 2rem;
@@ -180,7 +172,6 @@ body {
   line-height: 1; letter-spacing: -0.03em;
   margin-bottom: 3rem;
 }
-/* the "file.ipynb" style title like in the PDF */
 .file-title {
   font-size: clamp(1.6rem, 4vw, 3.5rem);
   font-weight: 900; color: var(--white);
@@ -189,9 +180,7 @@ body {
   margin-bottom: 0.5rem;
 }
  
-/* ══════════════════════════════
-   FILE TREE
-══════════════════════════════ */
+/* FILE TREE*/
 .filetree-section { background: var(--bg); }
 .filetree-card {
   background: #0d1117;
@@ -210,9 +199,7 @@ body {
 .ft-nb    { color: #ff9e64; }
 .ft-other { color: rgba(255,255,255,0.4); }
  
-/* ══════════════════════════════
-   PIPELINE / ÉTAPES
-══════════════════════════════ */
+/* PIPELINE / ÉTAPES*/
 .pipeline-section { background: var(--bg-mid); }
 .steps-grid {
   display: grid;
@@ -246,9 +233,7 @@ body {
   color: var(--white-70); line-height: 1.6;
 }
  
-/* ══════════════════════════════
-   MODELES IA — résultats
-══════════════════════════════ */
+/* MODELES IA — résultats*/
 .models-section { background: var(--bg); }
 .models-grid {
   display: grid;
@@ -301,9 +286,7 @@ body {
   transition: width 1s ease;
 }
  
-/* ══════════════════════════════
-   OUTILS / AVENIR
-══════════════════════════════ */
+/* OUTILS / AVENIR*/
 .avenir-section { background: var(--bg-mid); }
 .avenir-grid {
   display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;
@@ -336,9 +319,7 @@ body {
   color: var(--blue-2); flex-shrink: 0; font-size: 0.75rem; margin-top: 2px;
 }
  
-/* ══════════════════════════════
-   TEAM / REVIEWS
-══════════════════════════════ */
+/*TEAM / REVIEWS*/
 .team-section { background: var(--bg); }
 .team-grid {
   display: grid;
@@ -426,9 +407,7 @@ body {
   font-size: 0.75rem; font-weight: 500; color: var(--white-70); line-height: 1.55;
 }
  
-/* ══════════════════════════════
-   FOOTER
-══════════════════════════════ */
+/*FOOTER*/
 footer {
   background: var(--bg);
   text-align: center; padding: 4rem 2rem;
@@ -454,9 +433,7 @@ footer::before {
   position: relative;
 }
  
-/* ══════════════════════════════
-   ANIMATIONS
-══════════════════════════════ */
+/*ANIMATIONS*/
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(22px); }
   to   { opacity: 1; transform: none; }
