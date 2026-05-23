@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NextBuy - Data Science & Analytics</title>
+  <meta name="description" content="Projet NextBuy : Analyse exploratoire de données (EDA) et Machine Learning (XGBoost) sur des comportements d'achats clients à Epitech.">
+  <link rel="stylesheet" href="nextbuy.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Barre de navigation -->
+  <nav class="navbar">
+    <a href="../index.html" class="back-link">← Retour au portfolio</a>
+    <span class="team-name">Équipe : Les Trois Mousquetaires</span>
+  </nav>
+
+  <!-- En-tête (Hero) -->
+  <header class="hero">
+    <p class="label">DATA SCIENCE & ANALYTICS // EPITECH 2025</p>
+    <h1>NextBuy</h1>
+    <p class="subtitle">Noa TRICERRI • Elian KOLNIK • Azad MANOUKIAN</p>
+    
+    <div class="tags">
+      <span>Data Science</span>
+      <span>Machine Learning</span>
+      <span>EDA</span>
+      <span>Python</span>
+      <span>XGBoost</span>
+      <span>SHAP</span>
+    </div>
+    
+    <p class="hero-desc">
+      Analyse du comportement d'achat de millions de clients : détection des cycles de commandes, identification des best-sellers et prédiction des réachats grâce à des modèles d'Intelligence Artificielle.
+    </p>
+  </header>
+
+  <!-- Contenu Principal -->
+  <main class="content">
+
+    <!-- Analyse Exploratoire (EDA) -->
+    <section class="card">
+      <h2 class="section-title">Analyse Exploratoire (EDA)</h2>
+      <p>L'analyse des données nous a permis de répondre à plusieurs questions business majeures :</p>
+      
+      <div class="grid-stats">
+        <div class="stat-box">
+          <h3>La Routine Client</h3>
+          <p>Le taux de réachat global est de <strong>65.51%</strong>. Un effet routine très fort est présent : beaucoup de clients rachètent régulièrement les mêmes produits[cite: 3].</p>
+        </div>
+        <div class="stat-box">
+          <h3>Cycles d'achats</h3>
+          <p>Les commandes sont massivement concentrées sur le week-end, avec <strong>le Dimanche et le Samedi</strong> en tête[cite: 3].</p>
+        </div>
+        <div class="stat-box">
+          <h3>Horaires & Produits</h3>
+          <p>Les produits frais et laitiers (Produce, Dairy/Eggs) sont achetés le matin, tandis que les snacks et boissons dominent l'après-midi[cite: 3].</p>
+        </div>
+        <div class="stat-box">
+          <h3>Le Best-seller</h3>
+          <p>La <strong>Banane</strong> domine très largement le classement avec plus de 4000 commandes dans notre échantillon[cite: 3].</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modèles de Machine Learning -->
+    <section class="card">
+      <h2 class="section-title">Machine Learning & Prédictions</h2>
+      <p>L'objectif était de prédire si un client allait racheter un produit (Target binaire : 1 = Oui, 0 = Non)[cite: 3]. Nous avons testé trois modèles :</p>
+      
+      <div class="ml-grid">
+        <div class="ml-item">
+          <h3>1. Logistic Regression</h3>
+          <p>Trace une ligne de décision mathématique simple[cite: 3]. <br><em>Accuracy : 91%</em>[cite: 3].</p>
+        </div>
+        <div class="ml-item">
+          <h3>2. Random Forest</h3>
+          <p>Utilise le vote de plusieurs arbres de décision[cite: 3]. <br><em>Accuracy : 92%</em>[cite: 3].</p>
+        </div>
+        <div class="ml-item best-model">
+          <h3>3. XGBoost (Vainqueur)</h3>
+          <p>Apprend de ses erreurs via des arbres successifs[cite: 3]. Modèle le plus fiable (Precision : 0.69)[cite: 3].</p>
+        </div>
+      </div>
+
+      <div class="highlight-box">
+        <strong>Interprétabilité (SHAP) :</strong> L'analyse montre que notre modèle XGBoost s'appuie à <strong>94% sur la fidélité client</strong> (historique individuel) contre seulement 6% pour la popularité du produit[cite: 3]. L'IA a compris que la routine d'un acheteur est un indicateur plus fiable que le statut de "best-seller"[cite: 3].
+      </div>
+    </section>
+
+    <!-- L'équipe et les bilans -->
+    <section class="card">
+      <h2 class="section-title">Répartition & Bilans</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <h3>Noa Tricerri</h3>
+          <span class="role">Data Viz & EDA</span>
+          <p><strong>Rôle :</strong> Création des 8 questions business, visualisations (Seaborn/Matplotlib), interprétation des résultats et README[cite: 3].</p>
+          <p><strong>Bilan :</strong> Très bonne organisation et compréhension renforcée de la création de graphiques[cite: 3].</p>
+        </div>
+        
+        <div class="team-member">
+          <h3>Azad Manoukian</h3>
+          <span class="role">IA & SHAP</span>
+          <p><strong>Rôle :</strong> Développement des 3 modèles IA (Logistic, Random Forest, XGBoost) et analyse d'interprétabilité avec SHAP[cite: 3].</p>
+          <p><strong>Bilan :</strong> Compréhension plus forte de la machination de l'IA et de la façon dont elle fait ses choix[cite: 3].</p>
+        </div>
+
+        <div class="team-member">
+          <h3>Elian Kolnik</h3>
+          <span class="role">Data Clean & Dashboard</span>
+          <p><strong>Rôle :</strong> Nettoyage de la donnée (Data Clean), création d'un graphique et intégration du Dashboard[cite: 3].</p>
+          <p><strong>Bilan :</strong> Notre force est le groupe de travail. Amélioration prévue : mieux déployer le dashboard à l'avenir[cite: 3].</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Pied de page -->
+  <footer>
+    <p>NextBuy • Les Trois Mousquetaires • Epitech 2025</p>
+  </footer>
+
+</body>
+</html>
